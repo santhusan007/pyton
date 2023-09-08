@@ -1,0 +1,1 @@
+https://mymapit.in/#/publicview/test/candidate/token/3HpyGYVT
