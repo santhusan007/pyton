@@ -19,15 +19,16 @@ if __name__ == "__main__":
     # DailyPrice.rbiPgs(c1, conn1, rbi_ref, cur_dict, delta=1)
     # print("rbi postgres done")
 
-    cu_url = 'https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash'
-    cu_df = DailyPrice.dfFromURL(cu_url)
-    DailyPrice.metal_sqlite(cu_df, c, conn)
-    print("copper sqqlite done")
-    DailyPrice.cu_pgs(cu_df, c1, conn1)
-    print("copper pgs done")
+    # cu_url = 'https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash'
+    # cu_df = DailyPrice.dfFromURL(cu_url)
+    # DailyPrice.metal_sqlite(cu_df, c, conn)
+    # print("copper sqqlite done")
+    # DailyPrice.cu_pgs(cu_df, c1, conn1)
+    # print("copper pgs done")
     # # https://archives.nseindia.com/content/historical/EQUITIES/2022/JUL/cm12JUL2022bhav.csv.zip
-    # datelist =[2,1]
+    # ####datelist =[2,1]
     # # for d in datelist:
+    # """Stock data"""
     folder_location = r'D:\pyhton\Python\Pandas\database\stock_screener'
     dateFormated = DailyPrice.bavcopyDate(delta=1)
     url = DailyPrice.bhavcopyUrl(dateFormated)

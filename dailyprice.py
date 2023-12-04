@@ -88,7 +88,7 @@ class DailyPrice():
         # Removing the '.'  from date (example( 08. January 2021 will convert to 08 january 2021))
         # df = df[:1]
         # for previous day
-        df = df[1:2]
+        df = df[:1]
 
         df['date'] = df['date'].apply(lambda x: x[0:2]+x[3:])
         # Removing the zero(0) from the start of date
